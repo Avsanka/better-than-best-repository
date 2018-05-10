@@ -13,4 +13,26 @@
 1. 'git commit' - делает коммит файлов в индексе
 1. 'git push' - залить изменения
 1. 'git pull' - принять изменения с удалённого репозитория
-    
+##Работа с html
+###Подключение скриптов и стилей
+ *Скрипты можно создать тегом `<script>`
+ 
+         <script type="text/javascript">
+        var j = 10;
+        console.log(j);
+        </script>
+    <script src="index.js" type="text/javascript"></script>
+   
+ *Стили создаются с помощью тега `<style>`:
+   
+           <style>
+           body{
+               background-color: coral;
+           }
+       </style>
+ ### Подключение файлов 
+ *Чтобы подключить файл со скриптом необходимо прописать тег `<script>` с атрибутом `src`
+   
+           <script src="index.js" type="text/javascript"></script>
+         
+ *Для подключения файла со стилями прописываем тег `<link>` с атрибутом `rel="stylesheet"`           
