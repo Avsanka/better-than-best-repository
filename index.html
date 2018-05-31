@@ -2,70 +2,56 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta content="text/html">
-    <meta name="description" content="Моя первая HTML страница">
-    <meta name="keywords" content="Ключевое слово 1">
-    <title>2Эксперементальный сайт</title>
-    <!--Scripts Block-->
-    <script type="text/javascript">
-        var j = 10;
-        console.log(j);
-        </script>
-    <script src="index.js" type="text/javascript"></script>
-    <!--Scripts block end-->
-    <!--Style block-->
-            <style>
-        body{
-            background-color: coral;
+    <meta name="description" content="Это мой первый КАЛЬКУЛЯТОР!">
+    <meta name="description" content="Онлайн, Калькулятор, калькулятор, онлайн">
+    <title>Калькулятор</title>
+
+
+    <style>
+       body{
+           background-color: white;
         }
-        h1 {
-            font-size: 100px
-        }
-
-
-
     </style>
-    <link rel="stylesheet" href="index.css">
-    <!--style block end-->
 </head>
 <body>
-<h1 align="center" style="color:#FFFFFF; font-size:100px">Привет</h1>
-<table align="center"; border="5">
-<thead>
-<tr>
-    <td></td>
-    <td>0</td>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-    <td>4</td>
-    <td>5</td>
-</tr>
-<tr>
-    <td>1</td>
-    <td>100</td>
-    <td>121</td>
-    <td>144</td>
-    <td>169</td>
-    <td>196</td>
-    <td>225</td>
-
-</tr>
-<tr>
-    <td>2</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-</tr>
-</thead>
-<tbody>
+<p id="header" align="center" style="color: black; font-size:35px">Добро пожаловать на наш сайт!</p>
+<p align="center" style="color: black; font-size:35px">Тут вы можете абсолютно бесплатно воспользоваться калькулятором</p>
+<table align="center" border="1">
+    <tbody>
+    <tr>
+        <td colspan="4"><input type="text" title="Input" id="num-input" style="text-align:right"; value="0"></td>
+    </tr>
+    <tr>
+        <td><button class="increment-button" name="button1">1</button></td>
+        <td><button class="increment-button" name="button2">2</button></td>
+        <td><button class="increment-button" name="button3">3</button></td>
+        <td><button>+</button></td>
+    </tr>
+    <tr>
+        <td><button class="increment-button" name="button4">4</button></td>
+        <td><button class="increment-button" name="button5">5</button></td>
+        <td><button class="increment-button" name="button6">6</button></td>
+        <td><button>-</button></td>
+    </tr>
+    <tr>
+        <td><button class="increment-button" name="button7">7</button></td>
+        <td><button class="increment-button" name="button8">8</button></td>
+        <td><button class="increment-button" name="button9">9</button></td>
+        <td><button>*</button></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><button class="increment-button" name="button0">0</button></td>
+        <td><button>.</button></td>
+        <td><button>/</button></td>
+    </tr>
+    <tr>
+        <td><button><-</button></td>
+        <td colspan="2"></td>
+        <td><button>=</button></td>
+    </tr>
     </tbody>
-    <tfoot>
-
-    </tfoot>
-    <div style="height:1px;
-width=1px;
-border-top:5px solid #FFFFFF">
+</table>
+<script src="index.js" type="text/javascript"></script>
 </body>
 </html>
