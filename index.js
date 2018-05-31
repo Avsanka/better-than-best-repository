@@ -1,5 +1,6 @@
 buttons = document.getElementsByClassName("increment-button");
 var input = document.getElementById("num-input");
+var plusButton = document.getElementById("plus-button");
 var ii = false, pp = false, a = 0;
 
 num = function (event) {
@@ -23,7 +24,9 @@ plus = function (event) {
         a = input.value;
         pp = true;
     }
-}
+};
 for (i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", num);
 }
+
+plusButton.addEventListener("click", plus)
